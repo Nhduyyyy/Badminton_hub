@@ -1,0 +1,174 @@
+
+
+:root {
+    --federal-blue: #03045eff;
+    --marian-blue: #023e8aff;
+    --honolulu-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --pacific-cyan: #00b4d8ff;
+    --vivid-sky-blue: #48cae4ff;
+    --non-photo-blue: #90e0efff;
+    --non-photo-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+}
+
+/* Wrapper không dùng body */
+.admin-wrapper {
+    background: linear-gradient(135deg, var(--non-photo-blue-2), var(--light-cyan));
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.admin-wrapper h2 {
+    color: var(--marian-blue);
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-wrapper h1 {
+    color: var(--federal-blue);
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Search form */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#searchForm input[type="text"] {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid var(--pacific-cyan);
+    border-radius: 25px 0 0 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#searchForm input[type="text"]:focus {
+    border-color: var(--honolulu-blue);
+}
+#searchForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--honolulu-blue);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#searchForm button:hover {
+    background-color: var(--pacific-cyan);
+}
+
+/* Button Create */
+.create-user-btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 2px solid var(--honolulu-blue);
+    color: var(--honolulu-blue);
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.create-user-btn:hover {
+    background-color: var(--honolulu-blue);
+    color: #fff;
+}
+
+/* Filter form */
+.filter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.filter-form label {
+    font-weight: bold;
+    color: var(--federal-blue);
+}
+.filter-form select {
+    padding: 5px 10px;
+    border: 1px solid var(--non-photo-blue);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.filter-form input[type="submit"] {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--honolulu-blue);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.filter-form input[type="submit"]:hover {
+    background-color: var(--pacific-cyan);
+}
+
+/* Table */
+.admin-table {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.admin-table th {
+    background-color: var(--marian-blue);
+    color: var(--light-cyan);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.admin-table td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.85rem;
+}
+.admin-table img {
+    border-radius: 50%;
+    border: 2px solid var(--pacific-cyan);
+}
+.admin-table tr:nth-child(even) {
+    background-color: var(--non-photo-blue);
+}
+.admin-table tr:hover {
+    background-color: var(--non-photo-blue-2);
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination a, .pagination strong {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--federal-blue);
+    border: 1px solid var(--non-photo-blue);
+    transition: background-color 0.3s, color 0.3s;
+}
+.pagination a:hover {
+    background-color: var(--pacific-cyan);
+    color: #fff;
+}
+.pagination strong {
+    background-color: var(--honolulu-blue);
+    color: #fff;
+    border-color: var(--honolulu-blue);
+}

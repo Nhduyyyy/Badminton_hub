@@ -1,0 +1,23 @@
+ body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: #ffffff;
+                margin: 0;
+                padding: 0;
+                color: #E64A19;
+            }
+            .login-container {
+                background: #ffffff;
+                border-radius: 8px;
+                padding: 40px;
+                max-width: 400px;
+                width: 100%;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                border-top: 5px solid #E64A19;
+                color: #E64A19;
+            }
+            .login-container h2, 
+            .login-container label, 
+            .login-container .forgot-password, 
+            .login-container .error {
+                color: #E64A19;
+            }
